@@ -1,12 +1,12 @@
 import pyperclip
 import boto3
-import credentials
+import _credentials
 
 class ClipBoard:
     def __init__(self):
         self.current_content = ""
-        self.aws_access_key_id = credentials.aws_access_key_id
-        self.aws_secret_access_key = credentials.aws_secret_access_key
+        self.aws_access_key_id = _credentials.aws_access_key_id
+        self.aws_secret_access_key = _credentials.aws_secret_access_key
         self.aws_region = 'us-east-2'
         self.bucket_name = 'clipboardbucket'
 
